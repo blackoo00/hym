@@ -66,16 +66,22 @@ $(function(){
             }
             for (var i = 0, len = files.length; i < len; i++) {
                 var file = files[i];
-                $("#test").attr("src",URL.createObjectURL(file));
                 if(!checkPic(file,files)){
                     return;
                 }
-                var reader = new FileReader();
-                reader.onload = function(e) {
-                    // console.log(file);
-                    postPic(e.target.result,success_icon,file);
+                var options = {
+                    url:QRCODE_URL,
+                    temp_name:'qrcode',
+                    file:file,
+                    callBack:function(data){
+                        createCodeCom(URL.createObjectURL(file),data.path,data.code);
+                        success_icon.show();
+                    },
+                    eCallBack:function(){
+                        createCodeCom(URL.createObjectURL(file));
+                    }
                 };
-                reader.readAsDataURL(file);
+                postPic(options);
             }
     });
     //兑换码(添加)
@@ -186,77 +192,6 @@ function createGallery(){
             '    </div>';
         $(document.body).append(str);
     }
-}
-//提交图片
-function postPic(result,success_icon,file){
-    var formData = new FormData();
-    // formData.append("qrcode",convertBase64UrlToBlob(result));
-    formData.append("qrcode", file);
-    // createCodeCom(result);
-    // return;
-    $.ajax({
-        url : QRCODE_URL,
-        type : "POST",
-        data : formData,
-        dataType:"json",
-        processData : false,         // 告诉jQuery不要去处理发送的数据
-        contentType : false,        // 告诉jQuery不要去设置Content-Type请求头
-        success:function(data){
-            var data = JSON.parse(data);
-            if(typeof data.state != 'undefined' && data.state == 200){
-                createCodeCom(result,data.path,data.code);
-                success_icon.show();
-            }else{
-                createCodeCom(result);
-                // $.alert('二维码识别失败，请重新上传');
-            }
-            // window.location.href="${ctx}"+data;
-        },
-        error:function(){
-            createCodeCom(result);
-        },
-        xhr:function(){            //在jquery函数中直接使用ajax的XMLHttpRequest对象
-            var xhr = new XMLHttpRequest();
-
-            xhr.upload.addEventListener("progress", function(evt){
-                if (evt.lengthComputable) {
-                    var percentComplete = Math.round(evt.loaded * 100 / evt.total);
-                    console.log("正在提交."+percentComplete.toString() + '%');        //在控制台打印上传进度
-                }
-            }, false);
-
-            return xhr;
-        }
-    });
-}
-//验证图片
-function checkPic(file,files){
-    var success = true;
-    // 允许上传的图片类型
-    var allowTypes = ['image/jpg', 'image/jpeg', 'image/png', 'image/gif'];
-    // 1024KB，也就是 1MB
-    var maxSize = 1024 * 1024;
-    // 最大上传图片数量
-    var maxCount = MAX_COUNT;
-    // 如果类型不在允许的类型范围内
-    if (allowTypes.indexOf(file.type) === -1) {
-        $.alert('该类型不允许上传');
-        success = false;
-        return false;
-    }
-
-    if (file.size > maxSize) {
-        $.alert('图片太大，不允许上传');
-        success = false;
-        return false;
-    }
-
-    if (files.length > maxCount) {
-        $.alert('最多只能上传' + maxCount + '张图片');
-        success = false;
-        return false;
-    }
-    return success;
 }
 //全局校验
 function _validate(){

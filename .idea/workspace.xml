@@ -14,13 +14,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sale_bak.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sale/sale_bak.js">
+      <file leaf-file-name="sale.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sale/sale.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="316">
+              <caret line="164" column="27" lean-forward="false" selection-start-line="164" selection-start-column="16" selection-end-line="164" selection-end-column="27" />
               <folding>
-                <marker date="1519708365855" expanded="true" signature="7496:7509" ph="..." />
+                <element signature="n#div#5;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -29,8 +29,8 @@
       <file leaf-file-name="sale.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sale/sale.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="240" column="21" lean-forward="false" selection-start-line="240" selection-start-column="21" selection-end-line="240" selection-end-column="21" />
+            <state relative-caret-position="25">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
                 <element signature="e#219#276#0" expanded="false" />
                 <element signature="e#328#772#0" expanded="false" />
@@ -46,30 +46,27 @@
                 <element signature="e#1718#1866#0" expanded="false" />
                 <element signature="e#1806#1860#0" expanded="false" />
                 <element signature="e#2124#2163#0" expanded="false" />
-                <element signature="e#2776#3288#0" expanded="false" />
-                <element signature="e#3219#3282#0" expanded="false" />
-                <element signature="e#3359#3366#0" expanded="false" />
-                <element signature="e#3425#3956#0" expanded="false" />
-                <element signature="e#3447#3952#0" expanded="false" />
-                <element signature="e#3665#3709#0" expanded="false" />
-                <element signature="e#3748#3946#0" expanded="false" />
+                <element signature="e#2969#3481#0" expanded="false" />
+                <element signature="e#3412#3475#0" expanded="false" />
+                <element signature="e#3552#3559#0" expanded="false" />
+                <element signature="e#3618#4149#0" expanded="false" />
+                <element signature="e#3858#3902#0" expanded="false" />
+                <element signature="e#3941#4139#0" expanded="false" />
                 <element signature="n#!!block;n#createCodeCom#0" expanded="false" />
-                <element signature="e#5088#5350#0" expanded="false" />
-                <element signature="e#5098#5182#0" expanded="false" />
-                <element signature="e#5354#5483#0" expanded="false" />
-                <element signature="e#5548#5897#0" expanded="false" />
-                <element signature="e#5637#5698#0" expanded="false" />
-                <element signature="e#5789#5889#0" expanded="false" />
-                <element signature="e#5904#5957#0" expanded="false" />
+                <element signature="e#5281#5543#0" expanded="false" />
+                <element signature="e#5291#5375#0" expanded="false" />
+                <element signature="e#5547#5676#0" expanded="false" />
+                <element signature="e#5741#6090#0" expanded="false" />
+                <element signature="e#5830#5891#0" expanded="false" />
+                <element signature="e#5982#6082#0" expanded="false" />
+                <element signature="e#6097#6150#0" expanded="false" />
                 <element signature="n#!!block;n#createGallery#0" expanded="false" />
-                <element signature="e#6658#7298#0" expanded="false" />
-                <element signature="n#!!block;n#postPic#0" expanded="false" />
-                <element signature="e#9080#9163#0" expanded="false" />
+                <element signature="e#6851#7491#0" expanded="false" />
                 <element signature="n#!!block;n#_validate#0" expanded="false" />
-                <element signature="e#9556#9927#0" expanded="false" />
-                <element signature="e#9820#9921#0" expanded="false" />
-                <element signature="e#9962#10221#0" expanded="false" />
-                <element signature="e#9990#10215#0" expanded="false" />
+                <element signature="e#7613#7984#0" expanded="false" />
+                <element signature="e#7877#7978#0" expanded="false" />
+                <element signature="e#8019#8278#0" expanded="false" />
+                <element signature="e#8047#8272#0" expanded="false" />
                 <element signature="n#!!block;n#_getPostData#0" expanded="false" />
                 <element signature="n#!!block;n#_getCardData#0" expanded="false" />
                 <element signature="n#!!block;n#_fetCardType#0" expanded="false" />
@@ -81,11 +78,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admincp.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="uploadFile2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uploadFile2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="23" />
+              <folding>
+                <element signature="n#!!block;n#checkPic#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admincp.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../test/public/static/js/admincp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="793">
-              <caret line="200" column="19" lean-forward="true" selection-start-line="200" selection-start-column="19" selection-end-line="200" selection-end-column="19" />
+            <state relative-caret-position="143">
+              <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
               <folding>
                 <element signature="e#4408#4853#0" expanded="false" />
                 <element signature="e#5214#5264#0" expanded="false" />
@@ -98,7 +107,6 @@
                 <element signature="n#!!block;n#switchIframe#0" expanded="false" />
                 <element signature="n#!!block;n#deleteSwitchItem#0" expanded="false" />
                 <element signature="n#!!block;n#deleteSwitchIframe#0" expanded="false" />
-                <marker date="1519712370792" expanded="true" signature="8402:8416" ph="..." />
                 <marker date="1519712370792" expanded="true" signature="8986:9081" ph="..." />
                 <marker date="1519712370792" expanded="true" signature="9120:9330" ph="..." />
               </folding>
@@ -119,8 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sale-con</find>
-      <find>兑换</find>
       <find>sale-show</find>
       <find>redeen</find>
       <find>qrcode_data</find>
@@ -134,7 +140,6 @@
       <find>sale-item_add</find>
       <find>original-code-list</find>
       <find>uploaderInput</find>
-      <find>qrcode</find>
       <find>createCodeCom</find>
       <find>clone</find>
       <find>hym-extend-menu</find>
@@ -149,6 +154,9 @@
       <find>code_item</find>
       <find>convertBase64UrlToBlob</find>
       <find>addSwitchPageClone</find>
+      <find>qrcode</find>
+      <find>test</find>
+      <find>result</find>
     </findStrings>
     <replaceStrings>
       <replace>clss</replace>
@@ -169,8 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/base.js" />
-        <option value="$PROJECT_DIR$/members/members.css" />
         <option value="$PROJECT_DIR$/members/members.html" />
         <option value="$PROJECT_DIR$/commissions/commissions.css" />
         <option value="$PROJECT_DIR$/commissions/commissions.html" />
@@ -217,9 +223,11 @@
         <option value="$PROJECT_DIR$/service-form/service-form.js" />
         <option value="$PROJECT_DIR$/iframes/iframes.html" />
         <option value="$PROJECT_DIR$/../test/application/admin/view2/order/form_data.html" />
-        <option value="$PROJECT_DIR$/sale/sale.html" />
-        <option value="$PROJECT_DIR$/sale/sale.js" />
         <option value="$PROJECT_DIR$/../test/public/static/js/admincp.js" />
+        <option value="$PROJECT_DIR$/uploadFile2.0.js" />
+        <option value="$PROJECT_DIR$/uploadFile2.js" />
+        <option value="$PROJECT_DIR$/sale/sale.js" />
+        <option value="$PROJECT_DIR$/sale/sale.html" />
       </list>
     </option>
   </component>
@@ -235,9 +243,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="138" />
-    <option name="width" value="1221" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="263" />
+    <option name="y" value="2" />
+    <option name="width" value="1193" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectView">
@@ -292,6 +301,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\hym" />
       <recent name="D:\xampp\htdocs\hym\sale" />
       <recent name="D:\xampp\htdocs\hym\popup" />
       <recent name="D:\xampp\htdocs\hym\members" />
@@ -338,13 +348,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351561000" />
+    <option name="totallyTimeSpent" value="353949000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="263" y="2" width="1193" height="728" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17715959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17841971" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -386,13 +396,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/test.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/popup/popup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -607,6 +610,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="90" column="1" lean-forward="true" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
+          <folding>
+            <element signature="e#36#302#0" expanded="false" />
+            <element signature="e#92#299#0" expanded="false" />
+            <element signature="e#345#590#0" expanded="false" />
+            <element signature="e#647#1219#0" expanded="false" />
+            <element signature="e#1288#1642#0" expanded="false" />
+            <element signature="e#1710#1903#0" expanded="false" />
+            <element signature="n#!!block;n#showProd#0" expanded="false" />
+            <element signature="n#!!block;n#initCateNum#0" expanded="false" />
+            <element signature="n#!!block;n#colProd#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -804,16 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sale/sale.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="57" column="32" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="32" />
-          <folding>
-            <element signature="n#div#5;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sale/sale_bak.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -824,10 +828,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../test/public/static/js/admincp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding>
+            <element signature="e#4408#4853#0" expanded="false" />
+            <element signature="e#5214#5264#0" expanded="false" />
+            <element signature="e#5327#5377#0" expanded="false" />
+            <element signature="e#5441#5649#0" expanded="false" />
+            <element signature="e#5653#6766#0" expanded="false" />
+            <element signature="n#!!block;n#addSwitchPageWrap#0" expanded="false" />
+            <element signature="n#!!block;n#addSwitchItem#0" expanded="false" />
+            <element signature="n#!!block;n#addSwitchIframe#0" expanded="false" />
+            <element signature="n#!!block;n#switchIframe#0" expanded="false" />
+            <element signature="n#!!block;n#deleteSwitchItem#0" expanded="false" />
+            <element signature="n#!!block;n#deleteSwitchIframe#0" expanded="false" />
+            <marker date="1519712370792" expanded="true" signature="8986:9081" ph="..." />
+            <marker date="1519712370792" expanded="true" signature="9120:9330" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploadFile2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!block;n#checkPic#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sale/sale.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="240" column="21" lean-forward="false" selection-start-line="240" selection-start-column="21" selection-end-line="240" selection-end-column="21" />
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
             <element signature="e#219#276#0" expanded="false" />
             <element signature="e#328#772#0" expanded="false" />
@@ -843,30 +879,27 @@
             <element signature="e#1718#1866#0" expanded="false" />
             <element signature="e#1806#1860#0" expanded="false" />
             <element signature="e#2124#2163#0" expanded="false" />
-            <element signature="e#2776#3288#0" expanded="false" />
-            <element signature="e#3219#3282#0" expanded="false" />
-            <element signature="e#3359#3366#0" expanded="false" />
-            <element signature="e#3425#3956#0" expanded="false" />
-            <element signature="e#3447#3952#0" expanded="false" />
-            <element signature="e#3665#3709#0" expanded="false" />
-            <element signature="e#3748#3946#0" expanded="false" />
+            <element signature="e#2969#3481#0" expanded="false" />
+            <element signature="e#3412#3475#0" expanded="false" />
+            <element signature="e#3552#3559#0" expanded="false" />
+            <element signature="e#3618#4149#0" expanded="false" />
+            <element signature="e#3858#3902#0" expanded="false" />
+            <element signature="e#3941#4139#0" expanded="false" />
             <element signature="n#!!block;n#createCodeCom#0" expanded="false" />
-            <element signature="e#5088#5350#0" expanded="false" />
-            <element signature="e#5098#5182#0" expanded="false" />
-            <element signature="e#5354#5483#0" expanded="false" />
-            <element signature="e#5548#5897#0" expanded="false" />
-            <element signature="e#5637#5698#0" expanded="false" />
-            <element signature="e#5789#5889#0" expanded="false" />
-            <element signature="e#5904#5957#0" expanded="false" />
+            <element signature="e#5281#5543#0" expanded="false" />
+            <element signature="e#5291#5375#0" expanded="false" />
+            <element signature="e#5547#5676#0" expanded="false" />
+            <element signature="e#5741#6090#0" expanded="false" />
+            <element signature="e#5830#5891#0" expanded="false" />
+            <element signature="e#5982#6082#0" expanded="false" />
+            <element signature="e#6097#6150#0" expanded="false" />
             <element signature="n#!!block;n#createGallery#0" expanded="false" />
-            <element signature="e#6658#7298#0" expanded="false" />
-            <element signature="n#!!block;n#postPic#0" expanded="false" />
-            <element signature="e#9080#9163#0" expanded="false" />
+            <element signature="e#6851#7491#0" expanded="false" />
             <element signature="n#!!block;n#_validate#0" expanded="false" />
-            <element signature="e#9556#9927#0" expanded="false" />
-            <element signature="e#9820#9921#0" expanded="false" />
-            <element signature="e#9962#10221#0" expanded="false" />
-            <element signature="e#9990#10215#0" expanded="false" />
+            <element signature="e#7613#7984#0" expanded="false" />
+            <element signature="e#7877#7978#0" expanded="false" />
+            <element signature="e#8019#8278#0" expanded="false" />
+            <element signature="e#8047#8272#0" expanded="false" />
             <element signature="n#!!block;n#_getPostData#0" expanded="false" />
             <element signature="n#!!block;n#_getCardData#0" expanded="false" />
             <element signature="n#!!block;n#_fetCardType#0" expanded="false" />
@@ -877,25 +910,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../test/public/static/js/admincp.js">
+    <entry file="file://$PROJECT_DIR$/sale/sale.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="793">
-          <caret line="200" column="19" lean-forward="true" selection-start-line="200" selection-start-column="19" selection-end-line="200" selection-end-column="19" />
+        <state relative-caret-position="316">
+          <caret line="164" column="27" lean-forward="false" selection-start-line="164" selection-start-column="16" selection-end-line="164" selection-end-column="27" />
           <folding>
-            <element signature="e#4408#4853#0" expanded="false" />
-            <element signature="e#5214#5264#0" expanded="false" />
-            <element signature="e#5327#5377#0" expanded="false" />
-            <element signature="e#5441#5649#0" expanded="false" />
-            <element signature="e#5653#6766#0" expanded="false" />
-            <element signature="n#!!block;n#addSwitchPageWrap#0" expanded="false" />
-            <element signature="n#!!block;n#addSwitchItem#0" expanded="false" />
-            <element signature="n#!!block;n#addSwitchIframe#0" expanded="false" />
-            <element signature="n#!!block;n#switchIframe#0" expanded="false" />
-            <element signature="n#!!block;n#deleteSwitchItem#0" expanded="false" />
-            <element signature="n#!!block;n#deleteSwitchIframe#0" expanded="false" />
-            <marker date="1519712370792" expanded="true" signature="8402:8416" ph="..." />
-            <marker date="1519712370792" expanded="true" signature="8986:9081" ph="..." />
-            <marker date="1519712370792" expanded="true" signature="9120:9330" ph="..." />
+            <element signature="n#div#5;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
