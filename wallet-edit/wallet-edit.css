@@ -1,0 +1,25 @@
+.weui-label{
+    text-align: justify;
+    text-align-last: justify;
+}
+.weui-input{
+    padding-left: 15px;
+}
+/*.weui-btn-area{*/
+    /*position: fixed;*/
+    /*width: 100%;*/
+    /*bottom: 0;*/
+/*}*/
+.hint{
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #fff;
+}
+.hint-title{
+    color: #f1b849;
+}
+.hint-con{
+    margin-top: 8px;
+    color: #acacac;
+    font-size: 13px;
+}

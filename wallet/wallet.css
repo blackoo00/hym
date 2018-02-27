@@ -1,0 +1,37 @@
+.pay-item{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.pay-item-left{
+    font-size: 14px;
+    color: #565656;
+}
+.pay-item-money{
+    color: #2ca429;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.pay-item-money:before{
+    content:'￥';
+    font-size: 14px;
+}
+.pay-btn{
+    border-radius: 15px;
+    border:1px solid #88bddc;
+    padding: 6px 20px;
+    color: #88bddc;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+.pay-btn2{
+    display: block;
+    color: #ec8679;
+    border:1px solid #ec8679;
+    margin-top: 10px;
+}

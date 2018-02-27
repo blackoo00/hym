@@ -1,0 +1,94 @@
+.popup-btn{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(62, 132, 255, 0.76);
+    color: #fff;
+    z-index: 10;
+    cursor: pointer;
+}
+.popup-btn:before,.popup-btn:after{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.popup-btn:before{
+    content: '\e621';
+    font-family: iconfont;
+    font-size: 28px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.popup-btn:after{
+    /*content: '帮助';*/
+    font-size: 12px;
+    white-space: nowrap;
+    top: 28px;
+}
+.popup-item{
+    display: none;
+}
+.popup-mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 20;
+    cursor: pointer;
+}
+.popup-con{
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    width: 90%;
+    min-height: 100px;
+    max-height: 94%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 20px;
+    left: 5%;
+    border-radius: 8px;
+    z-index: 20;
+    padding: 5px;
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    box-sizing: border-box;
+}
+.popup-con pre{
+    text-align: justify;
+}
+.popup-close{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 10px;
+    top: 10px;
+    border: 1px solid #d6d6d6;
+    border-radius: 50%;
+    z-index: 30;
+    background-color: #fff;
+    cursor: pointer;
+}
+.popup-close:before,.popup-close:after{
+    content:'';
+    height: 1px;
+    width: 18px;
+    background-color: #d6d6d6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.popup-close:after{
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.popup-close:before{
+    transform: translate(-50%,-50%) rotate(135deg);
+}
+.popup-con img{
+    width: 100%;
+}

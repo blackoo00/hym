@@ -1,0 +1,17 @@
+deal:报单详情
+deals:报单列表
+drawings:提现
+drawings-list:提现记录
+my:个人中心
+sales:我要卖
+sale:我要卖详情
+my-sales:我的卖单
+service-form:报单
+wallet:我的钱包
+wallet-edit:修改账户
+deal-menu:权益交易按钮
+members:分销成员
+moneys:余额明细
+popup:弹出层
+recommend:推荐二维码
+qa:问题回答

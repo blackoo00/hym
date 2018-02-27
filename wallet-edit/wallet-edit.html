@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="./wallet-edit.css">
+</head>
+<body>
+<div class="container" style="padding-top: 15px">
+    <div class="weui-cells" style="margin-top: 0;">
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">支付宝账号</label></div>
+            <div class="weui-cell__bd">
+                <input id="alipay" class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入支付宝账号">
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">姓名</label></div>
+            <div class="weui-cell__bd">
+                <input id="alipay_name" class="weui-input" type="text" placeholder="请输入姓名">
+            </div>
+        </div>
+    </div>
+    <div class="hint">
+        <p class="hint-title">温习提示：</p>
+        <p class="hint-con">支付宝账号绑定后不可变更，如需变更，请致电客服：123456</p>
+    </div>
+    <div class="weui-btn-area">
+        <a class="weui-btn weui-btn_primary" href="javascript:" id="submit">确定</a>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<scrript>
+    var WALLET_EDIT = '#';
+    var WALLET_EDIT_SUCCESS = '#';
+</scrript>
+<script src="./wallet-edit.js"></script>
+</body>
+</html>

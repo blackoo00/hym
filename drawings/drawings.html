@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="drawings.css">
+</head>
+<body>
+<div class="container">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>可提现金额：</p>
+        </div>
+        <div class="weui-cell__ft money">￥<span id="money">1.00</span></div>
+    </div>
+    <div class="weui-cells__title">选择提现账号</div>
+    <div class="account-list">
+        <div class="account-item">
+            <div>
+                <span class="choose-icon choose"></span>
+                <span>支付宝账号</span>
+            </div>
+            <div>123456781211</div>
+        </div>
+    </div>
+    <div class="drawings-warn">
+        <p>温馨提示：</p>
+        <p>1.啊啊啊啊啊</p>
+    </div>
+    <div class="drawing-footer">
+        <div class="drawing-submit active" id="submit">立即提现</div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<script>
+    var DRAWINGS_URL = 'http://a.cn/api/cms/test1';
+    var SUCCESS_PAGE = 'http://www.baidu.com';
+</script>
+<script src="./drawings.js"></script>
+</body>
+</html>

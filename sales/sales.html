@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="./sales.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sales-header">
+            <div class="sales-header-item active">完整权益</div>
+            <div class="sales-header-item">我的收藏</div>
+        </div>
+        <div style="height: 40px;"></div>
+        <div class="weui-search-bar" id="searchBar">
+            <form class="weui-search-bar__form">
+                <div class="weui-search-bar__box">
+                    <i class="weui-icon-search"></i>
+                    <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+                    <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                </div>
+                <label class="weui-search-bar__label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+                    <i class="weui-icon-search"></i>
+                    <span>搜索</span>
+                </label>
+            </form>
+            <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+        </div>
+        <div class="sales-hint">
+            <div class="sales-hint-title" id="sales-hint">点击阅读交易细则</div>
+            <div class="sales-hint-con" id="sales-hint-con">
+                <p>啊啊啊啊啊啊啊啊啊啊啊啊</p>
+            </div>
+        </div>
+        <div class="sales-wrap" id="sales-all">
+            <div class="sales-item" data-id="1">
+                <div class="sale-category">
+                    <div class="cate-name on">咖啡卷</div>
+                    <div class="cate-action">
+                        <div class="cate-collection"></div>
+                        <div class="cate-count-wrap">
+                            ×<span class="cate-count"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sale-list">
+                    <div class="sale-item new" data-id="1">
+                        <a href="#" class="sale-con">
+                            <div class="sale-name">什么什么卷1</div>
+                            <div class="sale-price">￥10.00</div>
+                        </a>
+                        <div data-id="1" class="sale-collection"></div>
+                    </div>
+                    <div class="sale-item sale-off" data-id="2">
+                        <a href="#" class="sale-con">
+                            <div class="sale-name">什么什么卷2</div>
+                            <div class="sale-price">￥20.00</div>
+                        </a>
+                        <div class="sale-collection"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sales-item" data-id="1">
+                <div class="sale-category">
+                    <div class="cate-name on">咖啡卷</div>
+                    <div class="cate-action">
+                        <div class="cate-collection"></div>
+                        <div class="cate-count-wrap">
+                            ×<span class="cate-count"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sale-list">
+                    <div class="sale-item new" data-id="1">
+                        <a href="#" class="sale-con">
+                            <div class="sale-name">什么什么卷4</div>
+                            <div class="sale-price">￥10.00</div>
+                        </a>
+                        <div data-id="1" class="sale-collection"></div>
+                    </div>
+                    <div class="sale-item sale-off" data-id="2">
+                        <a href="#" class="sale-con">
+                            <div class="sale-name">什么什么卷31</div>
+                            <div class="sale-price">￥20.00</div>
+                        </a>
+                        <div class="sale-collection"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="sales-wrap" id="sales-col" style="display: none;">
+            <div class="sales-item" data-type="newest">
+                <div class="sale-category">
+                    <div class="cate-name on">最新上架</div>
+                    <div class="cate-action">
+                        <div class="cate-collection"></div>
+                        <div class="cate-count-wrap">
+                            ×<span class="cate-count"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sale-list">
+                    <div class="sale-item new" data-id="1">
+                        <div class="sale-con">
+                            <div class="sale-name">什么什么卷1</div>
+                            <div class="sale-price">￥10.00</div>
+                        </div>
+                        <div data-id="1" class="sale-collection"></div>
+                    </div>
+                    <div class="sale-item sale-off" data-id="2">
+                        <a href="#" class="sale-con">
+                            <div class="sale-name">什么什么卷2</div>
+                            <div class="sale-price">￥20.00</div>
+                        </a>
+                        <div class="sale-collection"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="sales-col-list">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+    <script>
+        var PROD_COLLECTION = '';
+    </script>
+    <script src="sales.js"></script>
+</body>
+</html>

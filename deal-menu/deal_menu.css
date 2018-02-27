@@ -1,0 +1,103 @@
+.menu-list{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu-item{
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #bbbbbb;
+    width: 40vw;
+    height: 40vw;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 30vw;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+.menu-item_sale{
+    background-image: linear-gradient(
+        to right top,
+        #fff 50%,
+        rgba(255, 189, 172, 0.38) 50%
+    );
+}
+.menu-item_wine{
+    background-image: linear-gradient(
+            to right top,
+            #fff 50%,
+            rgba(64, 154, 227, 0.33) 50%
+    );
+}
+.menu-item_iphone{
+    background-image: linear-gradient(
+            to right top,
+            #fff 50%,
+            rgba(162, 162, 162, 0.38) 50%
+    );
+}
+.menu-item_topup{
+    background-image: linear-gradient(
+            to right top,
+            #fff 50%,
+            rgba(255, 223, 67, 0.64) 50%
+    );
+}
+.menu-item_form{
+    background-image: linear-gradient(
+            to right top,
+            #fff 50%,
+            rgba(107, 110, 255, 0.23) 50%
+    );
+}
+.menu-item_dev{
+    background-image: linear-gradient(
+            to right top,
+            #fff 50%,
+            #fff 50%
+            /*rgba(107, 110, 255, 0.23) 50%*/
+    );
+}
+.menu-item:before{
+    content:'\e73c';
+    font-family: iconfont;
+    position: absolute;
+    top: 5vw;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 17vw;
+    color: #ffa01c;
+}
+.menu-item_sale:before{
+    content:'\e73c';
+    color: #ffa01c;
+}
+.menu-item_wine:before{
+    content:'\e60c';
+    color: #ff3131;
+    font-size: 19vw;
+}
+.menu-item_iphone:before{
+    content:'\e631';
+    color: #212121;
+    font-size: 19vw;
+}
+.menu-item_topup:before{
+    content:'\e60a';
+    color: #0072aa;
+    top: 7vw;
+    font-size: 17vw;
+}
+.menu-item_form:before{
+    content:'\e61f';
+    color: #0072aa;
+    top: 7vw;
+    font-size: 17vw;
+}
+.menu-item_dev:before{
+    content:'\e621';
+    color: #0072aa;
+    font-size: 17vw;
+}

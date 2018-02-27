@@ -1,0 +1,74 @@
+.members-header{
+    background-color: #fff;
+    text-align: center;
+    padding: 15px 0 5px 0;
+}
+.members-header .icon{
+    width: 20%;
+    display: inline-block;
+}
+.members-header .icon img{
+    width: 100%;
+}
+.members-header .title{
+    margin: 3px 0;
+}
+.members-header .count{
+    color: #fc4080;
+    font-size: 50px;
+    line-height: 60px;
+}
+.members-nav{
+    display: flex;
+    font-size: 14px;
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+.members-nav .nav-item{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.members-nav .nav-item:not(:last-child):after{
+    content:'';
+    position: absolute;
+    height: 70%;
+    width: 1px;
+    background-color: #656565;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.members-nav .active{
+    color: #fc4080;;
+}
+.members-list{
+    background-color: #fff;
+}
+.member{
+    padding: 10px;
+    display: flex;
+}
+.member_head{
+    padding-right: 15px;
+}
+.member_head img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.member_nickname{
+
+}
+.member_nickname:after{
+    content:'\e60b'attr(data-count);
+    font-family: iconfont;
+    margin-left: 6px;
+    font-size: 12px;
+    color: #b5b5b5;
+}
+.member_jointime{
+    margin-top: 6px;
+    font-size: 12px;
+    color: #b5b5b5;
+}

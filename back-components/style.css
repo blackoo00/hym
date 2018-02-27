@@ -1,0 +1,38 @@
+.spec-choose-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.spec-item{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    min-height: 40px;
+}
+.spec-item-title{
+    width: 100px;
+    text-align: justify;
+    text-align-last: justify;
+}
+.spec-con-item{
+    margin-left: 15px;
+    display: none;
+}
+.spec-con{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.spec-con-title{
+    width: 80px;
+    text-align: justify;
+    text-align-last: justify;
+    margin-right: 15px;
+}
+.spec-con select{
+    min-width: 100px;
+}
+.spec-area{
+    width: 200px;
+    height: 150px;
+}

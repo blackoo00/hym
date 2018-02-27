@@ -1,0 +1,78 @@
+html,body{
+    height: 100%;
+}
+.sd-hint{
+    margin: 0 15px 0 15px;
+    padding: 4px 15px;
+    font-size: 14px;
+    background-image: linear-gradient(
+        to top,
+        #ebc335 20%,
+        #f9e9e5 100%);
+    box-shadow: 0 0 10px #d6d6d6;
+    border-radius: 5px;
+}
+.sd-hint_title{
+    color: #dc1018;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sd-hint_con{
+    padding: 5px 0;
+    font-size: 13px;
+    color: #5a4224;
+    display: none;
+}
+.sd-list{
+    padding: 15px;
+}
+.sd-item{
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 10px 8px;
+    box-shadow: 0 0 10px #d6d6d6;
+}
+.sd-item_name{
+    color: #dc1018;
+    font-size: 17px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #d6d6d6;
+}
+.sd-item_detail{
+    padding-top: 5px;
+    font-size: 14px;
+    color: #444444;
+}
+.sd_item_d_item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+    align-items: center;
+}
+.sd_value{
+    font-weight: bold;
+}
+.sd_price_value{
+    color: #1db72e;
+    font-weight: bold;
+    font-size: 18px;
+}
+.sd-actions{
+    display: flex;
+}
+.sd-actions div{
+    color: #fff;
+    background-color: #189823;
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-size: 11px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.weui-prompt-input{
+    height: 5em;
+    width: 100%;
+}

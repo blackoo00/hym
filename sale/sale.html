@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="./sale.css">
+</head>
+<body>
+<div class="container">
+    <div class="sale-warn">
+        <p>温馨提示：</p>
+        <p>啊啊啊啊啊啊啊</p>
+    </div>
+    <form action="#" id="sale-form" method="post">
+        <div class="sale-content">
+            <div class="sale-item">
+                <div class="sale-show">
+                    <div class="sale-name">商品分类:</div>
+                    <div class="sale-value">咖啡卷1</div>
+                    <input class="sale-value-input" data-warn="请选择分类" type="hidden" name="catid"/>
+                </div>
+                <div class="sale-extend">
+                    <p data-value="1">咖啡卷1</p>
+                    <p data-value="2">咖啡卷2</p>
+                    <p data-value="3">咖啡卷3</p>
+                </div>
+            </div>
+            <div class="sale-item">
+                <div class="sale-show">
+                    <div class="sale-name">商品来源:</div>
+                    <div class="sale-value">淘宝</div>
+                    <input class="sale-value-input" type="hidden" name="from"/>
+                </div>
+                <div class="sale-extend">
+                    <p data-value="淘宝">淘宝</p>
+                    <p data-value="天猫">天猫</p>
+                </div>
+            </div>
+            <div class="sale-item">
+                <div class="sale-show click-off">
+                    <div class="sale-name">商品名称:</div>
+                    <div class="sale-value">商品名</div>
+                </div>
+            </div>
+            <div class="sale-item">
+                <div class="sale-show">
+                    <div class="sale-name">成本:</div>
+                    <div class="sale-value">
+                        <input class="sale-input validate" name="money" type="text" value="" placeholder="请输入成本">
+                        <div class="sale-icon sale-help"></div>
+                    </div>
+                </div>
+            </div>
+            <img src="" id="test" alt="">
+            <div class="sale-item">
+                <div class="sale-show" id="qrcode-wrap">
+                    <div class="sale-name">上传二维码:</div>
+                    <div class="sale-value">
+                        <div class="sale-icon sale-success"></div>
+                        <div class="sale-icon sale-qrcode">
+                            <input class="qrcode" data-warn="请上传二维码" name="qrcode" multiple="" type="file" id="qrcode">
+                            <!--<input type="hidden" id="code-path" name="qrcode">-->
+                        </div>
+                        <div class="sale-icon sale-help" data-warn="上传二维码"></div>
+                    </div>
+                </div>
+            </div>
+            <!--<input class="qrcode2" data-warn="请上传二维码" multiple="" type="file" id="qrcode2">-->
+            <div id="code-list">
+                <!--<div class="sale-item redeen-code">-->
+                    <!--<div class="qrcode-show weui_uploader_files">-->
+                        <!--<img class="qrcode_icon" src="qrcode.png"/>-->
+                    <!--</div>-->
+                    <!--<div class="sale-show">-->
+                        <!--<div class="sale-name">兑换码:</div>-->
+                        <!--<div class="sale-value">-->
+                            <!--<input readonly class="sale-input validate form-code" data-qrcode="" type="text" value=""-->
+                                   <!--placeholder="请输入兑换码">-->
+                            <!--<div class="sale-icon sale-help"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="sale-item_actions">-->
+                        <!--<div class="sale-item_del"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+            <div id="original-code-list">
+                <!--<div class="sale-item">-->
+                    <!--<div class="sale-show">-->
+                        <!--<div class="sale-name">兑换码:</div>-->
+                        <!--<div class="sale-value">-->
+                            <!--<input class="sale-input validate form-code" type="text" value="" placeholder="请输入兑换码">-->
+                            <!--<div class="sale-icon sale-help"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="sale-item_actions">-->
+                        <!--<div class="sale-item_add"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="sale-item">
+                    <div class="sale-show sale_card">
+                        <div class="sale_card_code">
+                            <div class="sale-name">兑换码:</div>
+                            <div class="sale-value">
+                                <input class="sale-input validate form-code" type="text" value="" placeholder="请输入兑换码">
+                                <div class="sale-icon sale-help" data-warn="填写兑换码"></div>
+                            </div>
+                        </div>
+                        <div class="sale_card_pwd">
+                            <div class="sale-name">卡密:</div>
+                            <div class="sale-value">
+                                <input class="sale-input validate form-pwd" type="text" value="" placeholder="请输入卡密">
+                                <div class="sale-icon sale-help" data-warn="填写卡密"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sale-item_actions sale-item_cart_actions">
+                        <div class="sale-item_add"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sale-item" id="showDatePicker">
+                <div class="sale-show">
+                    <div class="sale-name">有效期(含当天):</div>
+                    <div class="sale-value" id="data-time-show">
+                        <!--时间格式 2016-01-11T16:00:00-->
+                        <!--<input id="datetime" name="datetime" class="weui-input validate" data-warn="有效期有误" type="datetime-local" value="">-->
+                    </div>
+                    <input class="validate" type="hidden" value="" id="datetime" name="datetime" data-warn="请选择时间">
+                </div>
+            </div>
+        </div>
+    </form>
+    <div style="height: 53px"></div>
+    <div class="sale-footer">
+        <div class="sale-submit" id="submit">立即发布</div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+<script src="./ajaxfileupload.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+<!--<script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>-->
+<script>
+    var QRCODE_URL = 'http://a.cn/api/cms/up_img2';
+    var SALE_SUBMIT_URL = '';
+    var SUCCESS_URL = '';
+    var MAX_COUNT = 4;
+</script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+    // wx.config({
+    //     debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+    //     appId: '', // 必填，公众号的唯一标识
+    //     timestamp: , // 必填，生成签名的时间戳
+    //     nonceStr: '', // 必填，生成签名的随机串
+    //     signature: '',// 必填，签名
+    //     jsApiList: [] // 必填，需要使用的JS接口列表
+    // });
+</script>
+<script src="../base2.js"></script>
+<script src="sale.js"></script>
+</body>
+</html>

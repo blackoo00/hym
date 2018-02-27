@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="./wallet.css">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container" style="paddingTop:'10px'">
+    <input type="hidden" value="" id="ali-num">
+    <div class="pay-item" id="no-ali-account">
+        <div class="pay-item-left">
+            支付宝账号：暂未绑定
+        </div>
+        <div class="pay-item-right">
+            <a class="pay-btn">去绑定</a>
+        </div>
+    </div>
+    <div class="pay-item" id="ali-account">
+        <div class="pay-item-left" style="width:70%">
+            支付宝账号：123456(姓名)
+        </div>
+        <div class="pay-item-right">
+            <a class="pay-btn pay-btn2" style="margin-top: 0;">修改</a>
+        </div>
+    </div>
+    <div class="pay-item">
+        <div class="pay-item-left">
+            <p>可提现账户余额</p>
+            <p class="pay-item-money">0.00</p>
+        </div>
+        <div class="pay-item-right">
+            <a href="#" class="pay-btn check-ali">查看明细</a>
+            <a href="#" class="pay-btn check-ali">查看明细</a>
+            <a class="pay-btn pay-btn2 check-ali">提现</a>
+        </div>
+    </div>
+    <div class="pay-item">
+        <div class="pay-item-left">
+            <p>冻结账户余额</p>
+            <p class="pay-item-money">0.00</p>
+        </div>
+        <div class="pay-item-right">
+            <div class="pay-btn">查看明细</div>
+        </div>
+    </div>
+    <div class="footer">
+        <a to='/activity'>活动管理</a>
+        <a>权益交易</a>
+        <a to='/my' class='footer-active'>
+            我的
+        </a>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<script src="./wallet.js"></script>
+</body>
+</html>

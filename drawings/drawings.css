@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 549617 */
+    src: url('//at.alicdn.com/t/font_549617_k7fq301xufp0t3xr.eot');
+    src: url('//at.alicdn.com/t/font_549617_k7fq301xufp0t3xr.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_549617_k7fq301xufp0t3xr.woff') format('woff'),
+    url('//at.alicdn.com/t/font_549617_k7fq301xufp0t3xr.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_549617_k7fq301xufp0t3xr.svg#iconfont') format('svg');
+}
+
+body {
+    color: #868686;
+}
+
+.weui-cell {
+    background-color: #fff;
+}
+
+.money {
+    color: #ee7d69;
+}
+
+.account-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #fff;
+}
+
+.account-item .choose:before {
+    content: '\e624';
+    color: #06dc0a;
+    font-family: iconfont;
+}
+
+.drawings-warn {
+    padding: 15px;
+}
+
+.drawings-warn > p:first-child {
+    font-size: 16px;
+    color: #e3b54b;
+}
+
+.drawings-warn > p {
+    font-size: 12px;
+}
+
+.drawing-footer {
+    position: fixed;
+    bottom: 0;
+    /*border-top: 1px solid #d9d9d9;*/
+    width: 100%;
+}
+
+.drawing-submit {
+    text-align: center;
+    width: 90%;
+    border-radius: 10px;
+    line-height: 42px;
+    background-color: #98ccf3;
+    color: #bce5ff;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.active{
+    background-color: #148ce6;
+    color: #fff;
+}

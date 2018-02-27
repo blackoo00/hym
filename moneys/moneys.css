@@ -1,0 +1,23 @@
+.container{
+    /*padding-top: 15px;*/
+}
+.weui-cells{
+    margin-top: 0;
+}
+.weui-cell{
+    padding: 6px 15px;
+}
+.weui-cell__ft{
+    color: #000;
+}
+.money:before{
+    content:'\e643';
+    font-family: iconfont;
+    color: #d85930;
+    font-size: 38px;
+    margin-right: 10px;
+}
+.status-time{
+    font-size: 12px;
+    color: #414141;
+}

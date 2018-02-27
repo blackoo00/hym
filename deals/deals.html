@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="./deals.css">
+</head>
+<body>
+<div class="container">
+    <div class="deals-header">
+        <div class="deals-header-item deals-header-active" data-status="1">待确认</div>
+        <div class="deals-header-item" data-status="2">已收货</div>
+        <div class="deals-header-item" data-status="3">已发货</div>
+        <div class="deals-header-item" data-status="4">纠纷中</div>
+    </div>
+    <div style="height: 48px;"></div>
+    <div href="#" class="deals-list" id="deals-list">
+        <div class="deals-item">
+            <div class="deals-item-top">
+                <div class="deals-item-img">
+                    <img src='http://f.hiphotos.baidu.com/image/h%3D300/sign=4a0a3dd10155b31983f9847573ab8286/503d269759ee3d6db032f61b48166d224e4ade6e.jpg'/>
+                </div>
+                <div class="deals-item-details">
+                    <p class="deals-item-prod-name">商品名</p>
+                    <p class="deals-item-prod-num">数量×1</p>
+                    <p class="deals-item-prod-price">总价：￥23.5</p>
+                </div>
+            </div>
+            <div class="deals-item-bottom">
+                <div class="deals-item-warn">
+                    订单编号
+                </div>
+                <div class="deals-item-pay">
+                    时间
+                </div>
+            </div>
+        </div>
+        <a href="#" class="deals-item" data-id="1">
+            <div class="deals-item-top">
+                <div class="deals-item-img">
+                    <img src='http://f.hiphotos.baidu.com/image/h%3D300/sign=4a0a3dd10155b31983f9847573ab8286/503d269759ee3d6db032f61b48166d224e4ade6e.jpg'/>
+                </div>
+                <div class="deals-item-details">
+                    <div class="deals-item-prod-con">
+                        <p class="deals-item-prod-name">商品名</p>
+                        <p class="deals-item-prod-num">×1</p>
+                    </div>
+                    <p class="deals-item_prod_express">
+                        <!--<div class="has_express">物流编号:<span class="express_number express_input">123</span></div>-->
+                        <span class="express_btn express_input">点击填写物流编号</span>
+                    </p>
+                    <p class="deals-item-prod-price">总价：￥23.5</p>
+                </div>
+            </div>
+            <div class="deals-item-bottom">
+                <div class="deals-item-warn">
+                    订单编号
+                </div>
+                <div class="deals-item-pay">
+                    时间
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="footer">
+        <a to='/activity'>活动管理</a>
+        <a>权益交易</a>
+        <a to='/my' class='footer-active'>
+            我的
+        </a>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<script src="../base.js"></script>
+<script>
+    var DEALS_LIST = '';
+    var DEALS_EXPRESS = '';
+</script>
+<script src="deals.js"></script>
+</body>
+</html>

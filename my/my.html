@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="./my.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="personal-header">
+        <div class="personal-logo">
+            <img src=''/>
+        </div>
+        <div class="personal-info">
+            <div class="personal-ID" id="personal-ID">
+                <div id="my-id-value">wx_123456</div>
+                <div class="personal-ID-icon" id="edit-my-ID"></div>
+            </div>
+            <p class="personal-edit-nickname hidden" id="personal-edit-nickname">
+                <input id="my-id-edit-value" value="wx_123456" class="personal-edit-nickname-value" type="text"/>
+                <span class="personal-edit-nickname-sure" id="edit-my-nickname"></span>
+            </p>
+            <p class="personal-score">
+                <span>信用分:280</span>
+                <span class="score-icon" id="my-score"></span>
+            </p>
+        </div>
+        <div class="personal-header-list">
+            <div class="personal-header-recommend">我要推荐</div>
+            <div class="personal-header-recommend-list">推荐列表</div>
+        </div>
+    </div>
+    <a href='#'>
+        <div class="my-wallet">
+            我的钱包
+        </div>
+        <div class="my-balance">
+            <div class="my-desposit">
+                <p class="my-balance-title">可提现账户余额</p>
+                <p class="my-balance-value">0.00</p>
+            </div>
+            <div class="my-desposit">
+                <p class="my-balance-title">可提现账户余额</p>
+                <p class="my-balance-value">0.00</p>
+            </div>
+        </div>
+    </a>
+    <div class="my-deal">
+
+
+        <!--<div class="my-title">-->
+        <!--我的报单-->
+        <!--</div>-->
+        <div class="my-deal-kind">
+            <div class="deal-kind active">线上</div>
+            <div class="deal-kind">线下</div>
+        </div>
+        <div class="my-deal-content my-bill">
+            <div class="my-deal-item">
+                <a href="">
+                    <div class="my-deal-saling my-deal-icon">
+                        <div class="my-deal-item-num">10</div>
+                    </div>
+                    <div class="my-deal-item-name">出售中</div>
+                </a>
+            </div>
+            <div class="my-deal-item">
+                <a href="">
+                    <div class="my-deal-sold my-deal-icon">
+                        <div class="my-deal-item-num">10</div>
+                    </div>
+                    <div class="my-deal-item-name">已售卖</div>
+                </a>
+            </div>
+            <div class="my-deal-item">
+                <a href="">
+                    <div class="my-deal-sale my-deal-icon">
+                        <div class="my-deal-item-num">10</div>
+                    </div>
+                    <div class="my-deal-item-name">已打款</div>
+                </a>
+            </div>
+            <div class="my-deal-item">
+                <a href="">
+                    <div class="my-deal-disput my-deal-icon">
+                        <div class="my-deal-item-num">0</div>
+                    </div>
+                    <div class="my-deal-item-name">纠纷中</div>
+                </a>
+            </div>
+        </div>
+        <div class="my-deal-content my-form" style="display: none;">
+            <div class="my-deal-item">
+                <a href="">
+                    <div class="my-deal-saling my-deal-icon">
+                        <div class="my-deal-item-num">10</div>
+                    </div>
+                    <div class="my-deal-item-name">出售中</div>
+                </a>
+            </div>
+            <div class="my-deal-item">
+                <div class="my-deal-sold my-deal-icon">
+                    <div class="my-deal-item-num">10</div>
+                </div>
+                <div class="my-deal-item-name">已下架</div>
+            </div>
+            <div class="my-deal-item">
+                <div class="my-deal-ship my-deal-icon">
+                    <div class="my-deal-item-num">10</div>
+                </div>
+                <div class="my-deal-item-name">已出货</div>
+            </div>
+            <div class="my-deal-item">
+                <div class="my-deal-sale my-deal-icon">
+                    <div class="my-deal-item-num">10</div>
+                </div>
+                <div class="my-deal-item-name">已出售</div>
+            </div>
+            <div class="my-deal-item">
+                <div class="my-deal-disput my-deal-icon">
+                    <div class="my-deal-item-num">0</div>
+                </div>
+                <div class="my-deal-item-name">纠纷中</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-achievement">
+        <div class="my-title">
+            我的成就
+        </div>
+        <div class="my-achievement-content">
+            <div class="my-achievement-detail">
+                <p>出售单数：0</p>
+                <p>出售信誉：0%</p>
+                <p>共出售：￥0.00</p>
+            </div>
+            <div class="my-achievement-profit">
+                <p class="my-achievement-profit-title">出售盈利</p>
+                <p class="my-achievement-profit-value">0.00</p>
+            </div>
+        </div>
+
+        <!--<div class="my-achievement-content" style="display: none;">-->
+            <!--<div class="my-achievement-detail">-->
+                <!--<p>购买单数：0</p>-->
+                <!--<p>购买信誉：0%</p>-->
+                <!--<p>共花费：￥0.00</p>-->
+            <!--</div>-->
+            <!--<div class="my-achievement-profit">-->
+                <!--<p class="my-achievement-profit-title">购买节省</p>-->
+                <!--<p class="my-achievement-profit-value">0.00</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div class="my-distribution">
+        <div class="my-title">
+            我的分销
+        </div>
+        <div class="my-distribution-content">
+            <a href="javascript:;" class="my-distribution-item">
+                <p class="my-distribution-title">成员人数</p>
+                <p class="my-distribution-value">10</p>
+            </a>
+            <div class="my-distribution-item">
+                <p class="my-distribution-title">分销收入</p>
+                <p class="my-achievement-profit-value">10</p>
+            </div>
+        </div>
+    </div>
+    <div class="my-actions">
+        <div class="my-title" style="background-color: #f6f6f6;">
+            更多服务
+        </div>
+        <a href="javascript:;" class="my-cell my-cell_access">
+            <div class="my-celll_icon  taxation-form"></div>
+            <div class="my-celll_con">前去报单</div>
+        </a>
+        <a href="javascript:;" class="my-cell my-cell_access">
+            <div class="my-celll_icon  examine"></div>
+            <div class="my-celll_con">前去验货</div>
+        </a>
+    </div>
+    <div style="height: 45px;"></div>
+    <div class="footer">
+        <a to='/activity'>活动管理</a>
+        <a>权益交易</a>
+        <a to='/my' class='footer-active'>
+            我的
+        </a>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<script>
+    var EDIT_NICKNAME = '';
+</script>
+<script src="my.js"></script>
+</body>
+</html>

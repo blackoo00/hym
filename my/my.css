@@ -1,0 +1,293 @@
+.personal-header {
+    padding: 17px;
+    display: flex;
+    background-image:linear-gradient(
+            to right,
+            rgba(253,133,98,0.9) 20%,
+            rgba(253,211,99,0.9) 100%);
+    position: relative;
+}
+
+.personal-logo {
+    width: 60px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.personal-logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+}
+.personal-info{
+    text-align: left;
+}
+.personal-info {
+    font-size: 14px;
+    color: #edf5fc;
+    margin: 0;
+    margin-bottom: 3px;
+}
+.personal-ID{
+    display: flex;
+    font-size: 17px;
+}
+.personal-ID-icon:after{
+    content: ' \e602';
+    font-family: iconfont;
+    margin-left: 5px;
+}
+.personal-edit-nickname{
+    display: none;
+}
+.personal-edit-nickname-value{
+    border:none;
+    border-radius: 5px;
+    width: 66%;
+    height: 23px;
+}
+.personal-edit-nickname-sure:before{
+    content:'\e615';
+    font-family: iconfont;
+    margin-left: 2px;
+}
+.score-icon:before{
+    content: ' \e620';
+    font-family: iconfont;
+    font-size: 17px;
+}
+.personal-header-list{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: #edf5fc;
+}
+.personal-header-list div{
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+//transform: scale(1);
+}
+.personal-header-recommend{
+    background-image:linear-gradient(
+            to right,
+            rgba(107,99,197,0.9) 15%,
+            rgba(148,182,224,0.9) 100%);
+}
+.personal-header-recommend-list{
+    background-image:linear-gradient(
+            to right,
+            rgba(239,82,0,0.9) 15%,
+            rgba(245,164,0,0.9) 100%);
+}
+.my-wallet{
+    color: #858585;
+    padding: 7px 0 7px 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.my-wallet:after{
+    content: '\e603';
+    font-family: iconfont;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.my-balance{
+    display: flex;
+    justify-content: space-between;
+}
+.my-desposit{
+    background-color: #fff;
+    padding: 5px 15px;
+    color: #737373;
+    width: 49.5%;
+}
+.my-balance-title{
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+.my-balance-value{
+    font-size: 24px;
+    color: #2f8b2c;
+    margin-bottom: 0;
+}
+.my-balance-value:before{
+    content: '￥';
+    font-size: 14px;
+}
+.my-deal-header{
+    display: flex;
+    justify-content: space-around;
+}
+.my-deal-title{
+    width: 50%;
+    padding: 10px 0;
+    text-align: center;
+}
+.my-deal-title-active{
+    color: #f9816d;
+    border-bottom: 3px solid #f9816d;
+}
+.my-deal-kind{
+    display: flex;
+    justify-content: space-around;
+}
+.my-deal-kind div{
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+}
+.my-deal-kind div:first-child{
+    position: relative;
+}
+.my-deal-kind div:first-child:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 20px;
+    transform: translate(0,-50%);
+    background-color: #a1a1a1;
+}
+.my-deal-kind .active{
+    color: #e57a66;
+    border-bottom: 1px solid #e57a66;
+}
+.my-deal-content{
+    display: flex;
+    background-color: #fff;
+}
+.my-deal-item{
+    width: 25%;
+    padding: 4px 0;
+    text-align: center;
+}
+.my-deal-icon{
+    font-family: iconfont;
+    font-size: 30px;
+    color: #8ec8d2;
+    position: relative;
+}
+.my-deal-item-num{
+    color: #fff;
+    position: absolute;
+    background-color: #f29e05;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    font-size: 10px;
+    left: 50%;
+    transform: translate(45%,0);
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 16px;
+}
+.my-deal-saling:before{
+    content: '\e61c';
+}
+.my-deal-sold:before{
+    content: '\e6e4';
+}
+.my-deal-sale:before{
+    content: '\e611';
+}
+.my-deal-ship:before{
+    content: '\e605';
+}
+.my-deal-disput:before{
+    content: '\e66e';
+}
+.my-deal-item-name{
+    color: #7c7c7c;
+    font-size: 13px;
+}
+.my-title{
+    padding: 10px 0 10px 15px;
+}
+.my-achievement-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.my-achievement-detail,.my-achievement-profit{
+    background-color: #fff;
+    width: 49.5%;
+    padding: 10px 15px;
+}
+.my-achievement-detail p{
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: #686868;
+}
+.my-achievement-profit-title{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.my-achievement-profit-value{
+    font-size: 28px;
+    color: #16a1cb;
+    margin-bottom: 3px;
+//font-family: Fantasy;
+}
+.my-achievement-profit-value:before{
+    content: '￥';
+    font-size: 15px;
+}
+.my-distribution-content{
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding: 10px 0;
+}
+.my-distribution-item{
+    text-align: center;
+    width: 100%;
+}
+.my-distribution-item:first-child{
+    position: relative;
+}
+.my-distribution-item:first-child:after{
+    content:'';
+    position: absolute;
+    top: -50%;
+    right: 0;
+    height: 200%;
+    width: 1px;
+    background-color: #cbcbcb;
+    transform: scale(0.5);
+}
+.my-distribution-title,.my-distribution-value{
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: #686868;
+}
+.my-distribution-title{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.my-distribution-value{
+    font-size: 28px;
+    color: #16a1cb;
+}
+.taxation-form:before{
+    content:'\e651';
+    font-family: iconfont;
+    color: #0ecb15;
+}
+.examine{
+    background-color: #fff;
+}
+.examine:before{
+    content:'\e637';
+    font-family: iconfont;
+    margin-right: 6px;
+    color: #cbb70f;
+    font-size: 24px;
+}

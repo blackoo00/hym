@@ -1,0 +1,52 @@
+.container{
+    padding-top: 15px;
+}
+.weui-cells{
+    margin-top: 0;
+}
+.weui-cell{
+}
+.process:before{
+    content:'\e616';
+    font-family: iconfont;
+    color: #d85930;
+    font-size: 38px;
+    margin-right: 10px;
+}
+.finish:before{
+    content:'\e635';
+    font-family: iconfont;
+    color: #099716;
+    font-size: 40px;
+    margin-right: 10px;
+}
+.back:before{
+    content:'\e627';
+    font-family: iconfont;
+    color: #cc1616;
+    font-size: 40px;
+    margin-right: 10px;
+}
+.refuse:before{
+    content:'\e60f';
+    font-family: iconfont;
+    color: #fb2222;
+    font-size: 42px;
+    margin-right: 10px;
+}
+.status-process{
+    font-size: 12px;
+    color: #d85930;
+}
+.status-finish{
+    font-size: 12px;
+    color: #279a6d;
+}
+.status-back{
+    font-size: 12px;
+    color: #cc1616;
+}
+.status-refuse{
+    font-size: 12px;
+    color: #fb2222
+}

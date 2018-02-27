@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="./service-from.css">
+</head>
+<body>
+<div class="container">
+    <div class="service-form-detail">
+        <div class="service-from-detail-item">
+            <div>ID:37</div>
+            <div>编号:12345678910</div>
+        </div>
+        <div class="service-from-detail-item">
+            <div>姓名</div>
+            <div>12345678910</div>
+        </div>
+        <div class="service-from-detail-item">
+            <div>微信:微信名</div>
+            <div>地址: 台州椒江啊啊啊啊</div>
+        </div>
+        <div class="service-from-detail-item">
+            <div>苹果Iphone7</div>
+            <div>×2</div>
+        </div>
+        <div class="service-from-detail-item">
+            <div>金额:6000.00</div>
+            <div>在线支付</div>
+        </div>
+        <div class="service-from-detail-item">
+            <div>物流号:123456</div>
+            <div>来源：淘宝</div>
+        </div>
+    </div>
+    <div class="service-form-action">
+        <div class="service-form-title">
+            操作区 <span style="color: red;font-size: 15px;">(订单已处理)</span>
+        </div>
+        <form action="#" id="form" method="post">
+            <input type="hidden" id="id" name="id" value="11">
+            <div class="service-form-action-item">
+                <div class="service-form-action-choose-type">
+                    <div class="choose-type-item" id="finish">
+                        <span data-value="1" class="choose-type-icon choose"></span>
+                        <span class="service-form-action-type">已收货</span>
+                    </div>
+                    <div class="choose-type-item" id="disput">
+                        <span data-value="3" class="choose-type-icon unchoose"></span>
+                        <span class="service-form-action-type">纠纷</span>
+                    </div>
+                </div>
+            </div>
+            <!--滑动编辑-->
+            <div class="service-form-slide-item" id="slide-wrap">
+                <div class="slide-down" id="slide-down">点击收起</div>
+                <div class="slide-con" id="slide-con">
+                    <div class="service-form-detail">
+                        <div class="service-from-detail-item">
+                            <div>编号:
+                                <input type="text" class="form-action-input" name="ordersn" id="ordersn" value="12"/>
+                            </div>
+                        </div>
+                        <div class="service-from-detail-item">
+                            <div>
+                                <span style="width: 40px">姓名:</span>
+                                <input style="width: 100%" type="text" class="form-action-input" name="name" id="name"
+                                       value="12"/>
+                            </div>
+                            <div>
+                                <span style="width: 40px">电话:</span>
+                                <input style="width: 100%" type="text" class="form-action-input" name="phone" id="phone"
+                                       value="12345678910"/>
+                            </div>
+                        </div>
+                        <div class="service-from-detail-item">
+                            <div>
+                                <span style="width: 40px">微信:</span>
+                                <input style="width: 100%" type="text" class="form-action-input" name="weixin"
+                                       id="weixin" value="台州椒江啊啊啊啊"/>
+                            </div>
+                            <div>
+                                <span style="width: 40px">地址:</span>
+                                <input style="width: 100%" type="text" class="form-action-input" name="address"
+                                       id="address" value="台州椒江啊啊啊啊"/>
+                            </div>
+                        </div>
+                        <div class="service-from-detail-item">
+                            <div class="service-form-choose-prod">
+                                <select name="goods_id" id="goods_id">
+                                    <option value="0">请选择产品</option>
+                                    <option value="2913">收苹果手机 IPHONE 7</option>
+                                    <option value="2915">凡客云</option>
+                                </select>
+                                <select name="spec_key" id="spec_key" style="display: none">
+                                    <option value="0">请选择产品</option>
+                                </select>
+                            </div>
+                            <div>×
+                                <input class="prod-num" type="number" name="number" id="number" value="2"/>
+                            </div>
+                        </div>
+                        <div class="service-from-detail-item">
+                            <div>
+                                <span style="width: 40px">金额:</span>
+                                <span><input class="form-action-input" readonly type="text" name="amount" id="amount"
+                                             value="6000.00"></span>
+                            </div>
+                            <div>
+                                <select id="pay-type" name="paytype" class="pay-type">
+                                    <option value="0">在线支付</option>
+                                    <option value="1">货到付款</option>
+                                    <option value="2">其他（闲鱼）</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="service-from-detail-item">
+                            <div>物流号:<input style="width: 70%;" type="text" class="form-action-input" id="liuno"
+                                            value="12"/></div>
+                            <div style="width: 40%;justify-content:flex-end;">来源：
+                                <select id="from" name="from">
+                                </select>
+                                <!--<input style="width: 50%;" type="text" class="form-action-input" id="from" value="淘宝"/>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-form-action-item" id="upload-pic">
+                <div class="service-form-action-title" style="width: 33px;">图片</div>
+                <div style="width: 100%">
+                    <ul class="weui-uploader__files" id="uploaderFiles">
+
+                    </ul>
+                    <div class="weui-uploader__input-box">
+                        <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+                    </div>
+                </div>
+            </div>
+            <div class="service-form-action-item">
+                <div class="service-form-action-title">串号(IMEI):</div>
+                <div>
+                    <input class="form-data form-action-input" data-warn="请输入串号" name="imei" type="text"
+                           value="12345435435">
+                </div>
+            </div>
+            <!--<div class="service-form-action-item">-->
+            <!--<div class="service-form-action-title">打款金额:</div>-->
+            <!--<div data-key="amount">-->
+            <!--<input class="form-data form-action-input validate" data-warn="请输入打款金额" name="da_amount" type="text"-->
+            <!--value="200">-->
+            <!--</div>-->
+            <!--</div>-->
+            <div class="service-form-action-item">
+                <!--<div class="service-form-action-title" style="width: 50px">备注:</div>-->
+                <textarea class="form-data service-form-area" name="remark" placeholder="备注"></textarea>
+            </div>
+        </form>
+    </div>
+    <div class="service-form-footer">
+        <div class="service-form-submit" id="service-form-submit">提交</div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+<script>
+    var SERVICE_FORM = '';
+    var city = {
+        "2913": {
+            "2_8": "\u989c\u8272:\u4eae\u9ed1\u8272 \u5b58\u50a8\u5927\u5c0f:256G",
+            "3_7": "\u989c\u8272:\u91d1\u8272 \u5b58\u50a8\u5927\u5c0f:128G",
+            "2_7": "\u989c\u8272:\u4eae\u9ed1\u8272 \u5b58\u50a8\u5927\u5c0f:128G",
+            "1_7": "\u989c\u8272:\u9ed1\u8272 \u5b58\u50a8\u5927\u5c0f:128G",
+            "2_5": "\u989c\u8272:\u4eae\u9ed1\u8272 \u5b58\u50a8\u5927\u5c0f:32G"
+        }, "2915": []
+    };
+    var GET_PROD_PRICE = 'http://hym.cn//Mobile/Goods/getprice.html';
+    var UPLOAD_PIC = 'http://a.cn/api/cms/up_img2';
+    var FROM_URL = '';
+    var CHOOSE_ID = '';
+    var MAX_COUNT = 3;
+</script>
+<script src="../uploadFile.js"></script>
+<script src="./service-form.js"></script>
+</body>
+</html>

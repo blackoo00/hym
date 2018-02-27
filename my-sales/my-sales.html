@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" style="position: relative">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="my-sales.css">
+</head>
+<body ontouchstart class="weui-pull-to-refresh">
+<div class="weui-pull-to-refresh__layer">
+    <div class="weui-pull-to-refresh__arrow"></div> <!-- 上下拉动的时候显示的箭头 -->
+    <div class="weui-pull-to-refresh__preloader"></div> <!-- 正在刷新的菊花 -->
+    <div class="down">下拉刷新</div><!-- 下拉过程显示的文案 -->
+    <div class="up">释放刷新</div><!-- 下拉超过50px显示的文案 -->
+    <div class="refresh">正在刷新...</div><!-- 正在刷新时显示的文案 -->
+</div>
+
+<div class="container">
+    <div class="header-cate">
+        <div class="header-cate-item header-cate-active" data-status="1">出售中</div>
+        <div class="header-cate-item" data-status="2">已售卖</div>
+        <div class="header-cate-item" data-status="3">已打款</div>
+        <div class="header-cate-item" data-status="4">纠纷中</div>
+    </div>
+    <div style="height: 55px"></div>
+    <div class="sd-hint">
+        <div class="sd-hint_title my-cell_slide_down" id="slide-hint">温馨提醒:</div>
+        <div class="sd-hint_con" id="hint-con">
+                <pre>1、啊啊啊啊啊啊啊啊啊啊啊啊阿斯加德喉风散断水电费是sad
+                    2、啊啊四季度会发生阿斯顿发送到123123</pre>
+        </div>
+    </div>
+    <div class="sd-list" id="sd-list">
+        <div class="sd-item">
+            <div class="sd-item_name">卷名</div>
+            <div class="sd-item_detail">
+                <div class="sd_item_d_item">
+                    <div class="sd_name">
+                        <span>卷号：</span>
+                        <span class="sd_value">***123</span>
+                    </div>
+                </div>
+                <div class="sd_item_d_item">
+                    <div class="sd_price">
+                        <span>价格：</span>
+                        <span class="sd_price_value">￥27.5</span>
+                    </div>
+                    <div class="sd_price">
+                        <span>状态：</span>
+                        <span class="sd_value sd_status">出售中</span>
+                    </div>
+                </div>
+                <div class="sd_item_d_item" data-id="1">
+                    <div class="sd_datetime">2018-01-1</div>
+                    <div class="sd-actions">
+                        <div class="sd_cancel">取消</div>
+                        <div class="sd_feedback">留言</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sd-item">
+            <div class="sd-item_name">卷名</div>
+            <div class="sd-item_detail">
+                <div class="sd_item_d_item">
+                    <div class="sd_name">
+                        <span>卷号：</span>
+                        <span class="sd_value">***123</span>
+                    </div>
+                </div>
+                <div class="sd_item_d_item">
+                    <div class="sd_price">
+                        <span>价格：</span>
+                        <span class="sd_price_value">￥27.5</span>
+                    </div>
+                    <div class="sd_price">
+                        <span>状态：</span>
+                        <span class="sd_value sd_status">出售中</span>
+                    </div>
+                </div>
+                <div class="sd_item_d_item" data-id="1">
+                    <div class="sd_datetime">2018-01-1</div>
+                    <div class="sd-actions">
+                        <div class="sd_cancel">取消</div>
+                        <div class="sd_feedback">留言</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sd-item">
+            <div class="sd-item_name">卷名</div>
+            <div class="sd-item_detail">
+                <div class="sd_item_d_item">
+                    <div class="sd_name">
+                        <span>卷号：</span>
+                        <span class="sd_value">***123</span>
+                    </div>
+                </div>
+                <div class="sd_item_d_item">
+                    <div class="sd_price">
+                        <span>价格：</span>
+                        <span class="sd_price_value">￥27.5</span>
+                    </div>
+                    <div class="sd_price">
+                        <span>状态：</span>
+                        <span class="sd_value sd_status">出售中</span>
+                    </div>
+                </div>
+                <div class="sd_item_d_item" data-id="1">
+                    <div class="sd_datetime">2018-01-1</div>
+                    <div class="sd-actions">
+                        <div class="sd_cancel">取消</div>
+                        <div class="sd_feedback">留言</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sd-item">
+            <div class="sd-item_name">卷名</div>
+            <div class="sd-item_detail">
+                <div class="sd_item_d_item">
+                    <div class="sd_name">
+                        <span>卷号：</span>
+                        <span class="sd_value">***123</span>
+                    </div>
+                </div>
+                <div class="sd_item_d_item">
+                    <div class="sd_price">
+                        <span>价格：</span>
+                        <span class="sd_price_value">￥27.5</span>
+                    </div>
+                    <div class="sd_price">
+                        <span>状态：</span>
+                        <span class="sd_value sd_status">出售中</span>
+                    </div>
+                </div>
+                <div class="sd_item_d_item" data-id="1">
+                    <div class="sd_datetime">2018-01-1</div>
+                    <div class="sd-actions">
+                        <div class="sd_cancel">取消</div>
+                        <div class="sd_feedback">留言</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sd-item">
+            <div class="sd-item_name">卷名</div>
+            <div class="sd-item_detail">
+                <div class="sd_item_d_item">
+                    <div class="sd_name">
+                        <span>卷号：</span>
+                        <span class="sd_value">***123</span>
+                    </div>
+                </div>
+                <div class="sd_item_d_item">
+                    <div class="sd_price">
+                        <span>价格：</span>
+                        <span class="sd_price_value">￥27.5</span>
+                    </div>
+                    <div class="sd_price">
+                        <span>状态：</span>
+                        <span class="sd_value sd_status">出售中</span>
+                    </div>
+                </div>
+                <div class="sd_item_d_item" data-id="1">
+                    <div class="sd_datetime">2018-01-1</div>
+                    <div class="sd-actions">
+                        <div class="sd_cancel">取消</div>
+                        <div class="sd_feedback">留言</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sd-item">
+            <div class="sd-item_name">卷名</div>
+            <div class="sd-item_detail">
+                <div class="sd_item_d_item">
+                    <div class="sd_name">
+                        <span>卷号：</span>
+                        <span class="sd_value">***123</span>
+                    </div>
+                </div>
+                <div class="sd_item_d_item">
+                    <div class="sd_price">
+                        <span>价格：</span>
+                        <span class="sd_price_value">￥27.5</span>
+                    </div>
+                    <div class="sd_price">
+                        <span>状态：</span>
+                        <span class="sd_value sd_status">出售中</span>
+                    </div>
+                </div>
+                <div class="sd_item_d_item" data-id="1">
+                    <div class="sd_datetime">2018-01-1</div>
+                    <div class="sd-actions">
+                        <div class="sd_cancel">取消</div>
+                        <div class="sd_feedback">留言</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="footer" style="position: absolute;">
+    <a to='/activity'>活动管理</a>
+    <a>权益交易</a>
+    <a to='/my' class='footer-active'>
+        我的
+    </a>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="my-sales-weui.js"></script>
+<script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+<script>
+    var MY_SALES = 'http://a.cn/api/cms/test    ';
+    // http://www.1055h.com/index.php?m=Mobile&c=User&a=verify&r=0.6308347055107189
+    var SALE_CANCEL = '';
+    var SALE_FEEDBACK = '';
+</script>
+<script src="../base.js"></script>
+<script src="my-sales.js"></script>
+</body>
+</html>

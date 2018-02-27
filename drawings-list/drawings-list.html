@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="./drawings-list.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weui-cells" id="list">
+            <a class="weui-cell weui-cell_access">
+                <div class="weui-cell__hd">
+                    <span class="refuse"></span>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>日期</p>
+                    <p class="status-refuse">拒绝</p>
+                </div>
+                <div class="weui-cell__ft">金额</div>
+            </a>
+            <a class="weui-cell weui-cell_access">
+                <div class="weui-cell__hd">
+                    <span class="back"></span>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>日期</p>
+                    <p class="status-back">退回</p>
+                </div>
+                <div class="weui-cell__ft">金额</div>
+            </a>
+            <a class="weui-cell weui-cell_access">
+                <div class="weui-cell__hd">
+                    <span class="process"></span>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>日期</p>
+                    <p class="status-process">审核中</p>
+                </div>
+                <div class="weui-cell__ft">金额</div>
+            </a>
+            <div class="weui-cell weui-cell_access">
+                <div class="weui-cell__hd">
+                    <span class="finish"></span>
+                </div>
+                <div class="weui-cell__bd">
+                    <p>日期</p>
+                    <p class="status-finish">审核中</p>
+                </div>
+                <div class="weui-cell__ft">金额</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var DRAWINGS_LIST = '';
+    </script>
+    <script src="../base.js"></script>
+    <script src="./drawings-list.js"></script>
+</body>
+</html>

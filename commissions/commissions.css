@@ -1,0 +1,29 @@
+.total-header{
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 0;
+}
+.total-header .value{
+    color: #ffb400;
+    font-size: 40px;
+    line-height: 60px;
+}
+.commissions-title{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    padding: 3px 15px;
+    align-items: center;
+}
+.coms-item{
+    justify-content: space-between;
+}
+.coms_details{
+    color: #423338;
+}
+.coms_time{
+    font-size: 12px;
+}
+.comsright{
+    color: #ffb400;
+}

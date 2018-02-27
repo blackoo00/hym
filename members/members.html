@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="./members.css">
+</head>
+<body>
+<div class="container" style="color: #423338;">
+    <div class="members-header">
+        <div class="statis">
+            <div class="icon"><img src="./persons.png"></div>
+            <div class="title">分销总人数(人)</div>
+            <div class="count">65</div>
+        </div>
+    </div>
+    <div class="members-nav">
+        <div class="nav-item active" data-level="1">一级分销(4)</div>
+        <div class="nav-item" data-level="2">一级分销(61)</div>
+        <div class="nav-item" data-level="3">一级分销(0)</div>
+    </div>
+    <div class="sandwich"></div>
+    <div class="members-list" id="members-list">
+        <div class="member my-cell_access my-cell_line">
+            <div class="member_head">
+                <img src="test.jpg"/>
+            </div>
+            <div class="member_detail">
+                <div class="member_nickname" data-count="10">昵称</div>
+                <div class="member_jointime">已加入团队20天</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/sprintf/1.1.1/sprintf.min.js"></script>
+<script>
+        var MEMBERS = 'aa';
+</script>
+<script src="../base2.js"></script>
+<script src="./members.js"></script>
+</body>
+</html>
